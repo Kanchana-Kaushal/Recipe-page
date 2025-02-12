@@ -25,6 +25,7 @@ font-family: "Young Serif", serif;
 body {
     margin: 0;
     font-family: "Outfit", serif;
+    background-color: var(--Stone100);
 }
 
 img {
@@ -32,12 +33,16 @@ img {
     height: auto;
     display: block;
     border-radius: 25px;
-    margin-top: 2.5em;
 }
 
 main {
     width: 90%;
+    max-width: 750px;
     margin: auto;
+    background-color: var(--White);
+    padding: 2em;
+    border-radius: 50px;
+    margin: 5em auto;
 }
 
 .title {
@@ -46,7 +51,7 @@ main {
 }
 
 .main-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 550;
 }
 
@@ -124,6 +129,9 @@ tr:last-child td {
 @media (max-width: 750px) {
     main {
         width: 100%;
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
     }
 
     .content {
@@ -134,9 +142,5 @@ tr:last-child td {
     img {
         margin-top: 0;
         border-radius: 0;
-    }
-
-    .main-title {
-        font-size: 2.5rem;
     }
 }
